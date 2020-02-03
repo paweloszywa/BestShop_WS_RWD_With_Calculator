@@ -1,5 +1,5 @@
 # BestShop WorkShop with RWD
-
+My first RWD website (HTML, SASS, JavaScript)
 ## Used: 
 - HTML
 - SASS
