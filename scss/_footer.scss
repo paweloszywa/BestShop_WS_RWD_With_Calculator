@@ -1,0 +1,43 @@
+footer{
+  background: #F7F7F7;
+  box-shadow: 0 -5px 40px #00000029;
+  height: 89px;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+ .logo-footer{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+
+   span:first-child{
+     font-family: Raleway, sans-serif;
+     font-size: 26px;
+     color: #08A6E4;
+     padding-bottom: 2px;
+   }
+   span:last-child{
+     font-family: Open Sans, sans-serif;
+     font-size: 0.6875rem;
+     color: #A5A5A5;
+   }
+ }
+  .social-icons{
+    align-items: flex-end;
+    justify-content: space-between;
+
+    a:last-child{
+      margin-left: 15px;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+}

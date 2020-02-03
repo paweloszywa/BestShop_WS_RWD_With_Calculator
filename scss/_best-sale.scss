@@ -1,0 +1,90 @@
+section.best-sale {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  @media screen and (min-width: 780px){
+    height: 531px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+section.best-sale h2{
+  margin-top: 40px;
+  font-size: 2.25rem;
+  font-family: Regular Raleway, sans-serif;
+  color: #000000;
+  text-align: center;
+  @media screen and (min-width: 880px){
+    margin-top: 0
+  }
+}
+
+.best-sale-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 780px){
+    flex-direction: row;
+    justify-content: space-between;
+    width: 790px;
+  }
+}
+
+.best-sale-icons section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  @media screen and (min-width: 780px){
+    padding-top: 103px;
+  }
+}
+
+
+.best-sale-icons section::before{
+  content: "";
+  z-index: 1;
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+  position: absolute;
+}
+
+.best-sale-icons section:first-child::before{
+  content: "";
+  background: #FB3B64;
+}
+
+.best-sale-icons section:nth-child(2)::before{
+  content: "";
+  background: #08A6E4;
+}
+
+.best-sale-icons section:nth-child(3)::before{
+  content: "";
+  background: #55DFB4;
+}
+
+.best-sale-icons section img {
+  z-index: 2;
+  position: relative;
+  margin-left: 30%;
+  margin-top: 8%;
+}
+
+.best-sale-icons section p.numbers {
+  font-family: ExtraBold Raleway, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.3725rem;
+  color: #000000;
+  padding-top: 24px;
+}
+
+.best-sale-icons section p {
+  font-family: Regular Raleway, sans-serif;
+  font-size: 1.0625rem;
+  color: #A5A5A5;
+}
+

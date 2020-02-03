@@ -1,0 +1,259 @@
+main {
+  margin-top: 70px;
+  background: #F7F7F7;
+}
+
+.main-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #F7F7F7;
+  padding: 42px 0;
+
+}
+
+article {
+  height: 370px;
+  width: 314px;
+  padding: 30px 0;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  border-radius: 5px;
+  margin: 41px;
+  position: relative;
+  @media screen and (min-width: 1000px){
+    width: 85%;
+    height: 370px;
+    padding: 30px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-text {
+    padding-left: 21px;
+    @media screen and (min-width: 1000px){
+      margin-left: 72px;
+      padding-left: 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  h2 {
+    padding: 27px 0 25px 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    @media screen and (min-width: 1000px){
+      padding-top: 0;
+    }
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.1875rem;
+  }
+
+  .main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50%;
+      @media screen and (min-width: 1000px){
+        width: 75%;
+      }
+    }
+  }
+}
+
+
+
+article:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 434px;
+
+  h2 {
+    padding-bottom: 80px;
+    padding-right: 20px;
+  }
+
+  p {
+    padding-bottom: 30px;
+  }
+}
+
+
+.main-flex {
+
+ > article:first-child {
+    position: relative;
+
+   &::after {
+     content: "";
+     position: absolute;
+     right: 71px;
+     top: 40px;
+     transform: rotate(45deg);
+     border-radius: 30px;
+     background: #FB3B64;
+     width: 80px;
+     height: 80px;
+     z-index: 0;
+   }
+
+    .main-image {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+ > article:nth-child(2) {
+    position: relative;
+
+   &::after {
+     content: "";
+     position: absolute;
+     right: 119px;
+     top: 24px;
+     border-radius: 50%;
+     background: #07ACE6;
+     width: 127px;
+     height: 127px;
+     z-index: 0;
+   }
+
+   .main-image {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+}
+
+.main-apart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1000px) {
+    width: 85%;
+    margin: 17.6px;
+    flex-direction: row;
+  }
+
+  > article:first-child {
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    p {
+      padding-top: 50px;
+    }
+  }
+
+ > article:last-child {
+    height: auto;
+    margin: -45px auto 0 auto;
+    background: #55DFB4;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .main-flex {
+    > article:first-child {
+      &::after {
+        right: 55px;
+        top: 72px;
+        width: 148px;
+        height: 148px;
+      }
+
+      p {
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 18rem;
+          bottom: -30px;
+          left: 0;
+          position: absolute;
+          border-bottom: 4px solid #FB3B64;
+        }
+      }
+    }
+
+    > article:nth-child(2) {
+      flex-direction: row-reverse;
+
+      &::after {
+        width: 256px;
+        height: 256px;
+        right: 0;
+        top: 32px;
+        left: 48px;
+      }
+
+      h2 {
+        padding-right: 250px;
+      }
+
+      p {
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 327px;
+          bottom: -20px;
+          left: 0;
+          position: absolute;
+          border-bottom: 4px solid #07ACE6;
+        }
+      }
+    }
+
+  }
+
+  .main-apart {
+
+    > article:first-child {
+      margin: 0 60px 0 0;
+
+      .main-text {
+        margin-left: 44.8px;
+        margin-right: 60.8px;
+      }
+
+      p {
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 352px;
+          bottom: -50px;
+          left: 0;
+          position: absolute;
+          border-bottom: 4px solid #55DF84;
+        }
+      }
+    }
+
+    > article:last-child {
+      width: 640px;
+      height: 370px;
+      margin-top: 0;
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+

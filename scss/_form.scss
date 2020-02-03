@@ -1,0 +1,158 @@
+.form {
+
+  @media screen and (min-width: 780px) {
+    padding-top: 70px;
+  }
+
+  .form-flex {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 780px) {
+      flex-direction: row;
+    }
+  }
+
+  h6 {
+    font-family: Raleway, sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 22px;
+  }
+
+  p {
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    padding-bottom: 32px;
+  }
+
+  .info {
+    color: #A5A5A5;
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 780px) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    div {
+      margin-bottom: 10px;
+      @media screen and (min-width: 780px) {
+        margin-right: 20px;
+      }
+    }
+
+    img {
+      padding-right: 8px;
+      vertical-align: middle;
+      @media screen and (min-width: 780px) {
+        padding-right: 4px;
+      }
+    }
+  }
+
+  .form-left-side{
+    @media screen and (min-width: 780px) {
+      width: 342px;
+      height: 372px;
+      margin-top: 35px;
+      margin-right: 80px;
+    }
+  }
+
+  .form-right-side{
+    @media screen and (min-width: 780px) {
+      width: 440px;
+      height: 372px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    label {
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 0.6875rem;
+      letter-spacing: 0.205rem;
+      color: #08A6E4;
+      margin-top: 42px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #95989A;
+      font-size: 1.125rem;
+      padding-top: 15px;
+    }
+
+    .next-to-text{
+      display: flex;
+      align-content: space-between;
+      padding-top: 35px;
+
+      p{
+        font-family: Open Sans, sans-serif;
+        font-size: 0.75rem;
+        color: #707070;
+        font-weight: 400;
+      }
+      p:last-child{
+        padding-left: 10px;
+      }
+    }
+
+    input[type="checkbox"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      border: 1px solid #95989A;
+      background: #FFFFFF;
+      outline: none;
+    }
+
+    input[type="checkbox"]:checked {
+      background-image: url("../assets/Checkmark.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    span input[type="submit"] {
+      display: inline-block;
+      float: right;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 0.8125rem;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background: #08A6E4;
+      box-shadow: 5px 10px 14px #07ACE629;
+      border-radius: 35px;
+      padding: 20px 97px;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    span input[type="submit"]:hover {
+      background: rgba(8, 166, 228, 0.95);
+    }
+
+  }
+}
+
+
